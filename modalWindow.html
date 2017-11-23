@@ -1,0 +1,59 @@
+<div class="modal_window">
+  <div class="modal-header">
+    <span class="modal_title">Rate</span>
+    <button type="button" class="close ic_close" data-dismiss="modal" ng-click="cancelModal()">&times;</button>
+    <div class="rate_stars clearfix">
+      <div class="rate_star">
+        <button class="rate_container rete-button" ng-disabled="disableButton" ng-class="{'clicked':rated==1}" ng-click="rateNow(1)"></button>
+        <div class="rate_content">1</div>
+      </div>
+      <div class="rate_star">
+        <button class="rate_container rete-button" ng-disabled="disableButton" ng-class="{'clicked':rated==2}" ng-click="rateNow(2)"></button>
+        <div class="rate_content">2</div>
+      </div>
+      <div class="rate_star">
+        <button class="rate_container rete-button" ng-disabled="disableButton" ng-class="{'clicked':rated==3}" ng-click="rateNow(3)"></button>
+        <div class="rate_content">3</div>
+      </div>
+      <div class="rate_star">
+        <button class="rate_container rete-button" ng-disabled="disableButton" ng-class="{'clicked':rated==4}" ng-click="rateNow(4)"></button>
+        <div class="rate_content">4</div>
+      </div>
+      <div class="rate_star">
+        <button class="rate_container rete-button" ng-disabled="disableButton" ng-class="{'clicked':rated==5}" ng-click="rateNow(5)"></button>
+        <div class="rate_content">5</div>
+      </div>
+      <div class="rate_star">
+        <button class="rate_container rete-button" ng-disabled="disableButton" ng-class="{'clicked':rated==6}" ng-click="rateNow(6)"></button>
+        <div class="rate_content">6</div>
+      </div>
+      <div class="rate_star">
+        <button class="rate_container rete-button" ng-disabled="disableButton" ng-class="{'clicked':rated==7}" ng-click="rateNow(7)"></button>
+        <div class="rate_content">7</div>
+      </div>
+      <div class="rate_star">
+        <button class="rate_container rete-button" ng-disabled="disableButton" ng-class="{'clicked':rated==8}" ng-click="rateNow(8)"></button>
+        <div class="rate_content">8</div>
+      </div>
+      <div class="rate_star">
+        <button class="rate_container rete-button" ng-disabled="disableButton" ng-class="{'clicked':rated==9}" ng-click="rateNow(9)"></button>
+        <div class="rate_content">9</div>
+      </div>
+      <div class="rate_star">
+        <button class="rate_container rete-button" ng-disabled="disableButton" ng-class="{'clicked':rated==10}" ng-click="rateNow(10)"></button>
+        <div class="rate_content">10</div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-body" id="modal-body">
+    <div class="review_content">
+      <textarea placeholder="Leave your review" class="review_texarea" ng-model="reviewText" ng-show="show_texarea"></textarea>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <div class="modal-footer_buttons">
+      <button class="" type="button" ng-click="cancelModal()">CANCEL</button>
+      <button class="" type="button" ng-click="ok()">RATE NOW</button>
+    </div>
+  </div>
+</div>
